@@ -1,0 +1,63 @@
+<!-- tailwindcss -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>devRena | Pokédex</title>
+  </head>
+  <body class="bg-gray-300/30">
+    <div class="flex flex-col w-full items-center mt-20">
+      <h1 class="font-bold text-2xl">Pókedex by devRena 😁</h1>
+      <p>Pókedex desarrollada con HTML, CSS y JavaScript puros y duros 🤪</p>
+      <p>Pequeño proyecto para forzar mi lógica de programación =)</p>
+      <p>
+        Se han aplicado conceptos para la optimización de la busqueda y acceso a
+        la API.
+      </p>
+      <p>
+        Mas detalles en mi
+        <a href="" class="text-blue-700 font-medium">GitHub</a> <- 👀
+      </p>
+    </div>
+    <div class="flex justify-center mt-15 px-5">
+      <input
+        class="w-full max-w-2xl rounded-md border border-gray-400"
+        id="search-pokemon"
+        type="text"
+        placeholder="Search"
+      />
+    </div>
+
+    <div
+      id="loading-container"
+      class="absolute flex w-screen h-screen justify-center items-center"
+    >
+      <img
+        class="animate-spin pb-50"
+        src="./public/pokeball-icon.svg"
+        id="loading-message"
+      />
+    </div>
+    <section
+      id="pokemon-container"
+      class="flex justify-center flex-wrap px-5 mt-30 gap-x-7 gap-y-25 mb-20"
+    ></section>
+
+    <!-- <section class="flex justify-center my-20">
+      <button
+        id="next-page"
+        class="bg-gray-300 px-3 py-1 cursor-pointer rounded-md"
+      >
+        Siguiente página
+      </button>
+    </section> -->
+
+    <script src="./src/js/app.js"></script>
+    <!-- <script src="test.js"></script> -->
+  </body>
+</html>

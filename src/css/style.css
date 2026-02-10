@@ -1,0 +1,12 @@
+input[type="text"] {
+  width: 100%;
+  box-sizing: border-box;
+  background-image: url("../../public/searchicon.svg"); /* Specify your icon image path */
+  background-position: 10px 10px; /* Position the icon */
+  background-repeat: no-repeat; /* Ensure it only appears once */
+  padding: 10px 20px 10px 45px; /* Adjust padding to make space for the icon */
+}
+
+.hidden {
+  display: none;
+}
